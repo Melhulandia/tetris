@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Gasoek+One&family=Playfair+Display&family=Press+Start+2P&display=swap');
+body      {font-family: 'Press Start 2P', cursive;background: linear-gradient(0deg, rgba(50,52,61,1) 0%, rgba(34,193,195,1) 36%, rgba(217,22,199,1) 78%) no-repeat;width: 100%;}
+#tetris   { margin: 1em auto; padding: 1em; border: 4px; border-radius: 10px; background-color: #f2edf101; }
+#stats    { display: inline-block; vertical-align: top; }
+#canvas   { display: inline-block; vertical-align: top; box-shadow: 3px 3px 10px 12px #0adfd4; border: 2px solid #333232; }
+#menu     { display: inline-block; vertical-align: top; position: relative; }
+#menu p   { margin: 0.5em 0; text-align: center; }
+#menu p a { text-decoration: none; color: black; }
+#upcoming { display: inline; margin: 0 auto; background-color: #E0E0E0; }
+#score    { color: red; font-weight: bold; vertical-align: middle; }
+#rows     { color: blue; font-weight: bold; vertical-align: middle; }
+#stats    { position: absolute; bottom: 0em; right: 1em; }
+
+@media screen and (max-width: 4000px) { body { max-width: 100% !important;}}
+@media screen and (min-width:   0px) and (min-height:   0px)  {#tetris { font-size: 0.75em; width: 100%; height: 100vh;} #menu { width: 100px; height: 200px; } #upcoming { width:  50px; height:  50px; } #canvas { width: 100px; height: 200px; } } /* 10px chunks */
+@media screen and (min-width: 400px) and (min-height: 400px)  {#tetris { font-size: 1.00em; width: 100%; height: 100vh; } #menu { width: 150px; height: 300px; } #upcoming { width:  75px; height:  75px; } #canvas { width: 150px; height: 300px; } } /* 15px chunks */
+@media screen and (min-width: 500px) and (min-height: 500px)  {#tetris { font-size: 1.25em; width: 100%; height: 100vh;} #menu { width: 200px; height: 400px; } #upcoming { width: 100px; height: 100px; } #canvas { width: 200px; height: 400px; } } /* 20px chunks */
+@media screen and (min-width: 600px) and (min-height: 600px)  {#tetris { font-size: 1.50em; width: 100%; height: 100vh;} #menu { width: 250px; height: 500px; } #upcoming { width: 125px; height: 125px; } #canvas { width: 250px; height: 500px; } } /* 25px chunks */
+@media screen and (min-width: 700px) and (min-height: 700px)  {#tetris { font-size: 1.75em; width: 100%; height: 100vh;} #menu { width: 300px; height: 600px; } #upcoming { width: 150px; height: 150px; } #canvas { width: 300px; height: 600px; } } /* 30px chunks */
+@media screen and (min-width: 800px) and (min-height: 800px)  {#tetris { font-size: 2.00em; width: 100%; height: 100vh;} #menu { width: 350px; height: 700px; } #upcoming { width: 175px; height: 175px; } #canvas { width: 350px; height: 700px; } } /* 35px chunks */
+@media screen and (min-width: 900px) and (min-height: 900px)  {#tetris { font-size: 2.25em; width: 100%; height: 100vh;} #menu { width: 400px; height: 800px; } #upcoming { width: 200px; height: 200px; } #canvas { width: 400px; height: 800px; } } /* 40px chunks */
+@media screen and (min-width: 1000px) and (min-height: 1000px)  {#tetris { font-size: 2.50em; width: 100%; height: 100vh;} #menu { width: 450px; height: 900px; } #upcoming { width: 225px; height: 225px; } #canvas { width: 450px; height: 900px; } } /* 45px chunks */
+@media screen and (min-width: 1100px) and (min-height: 1100px)  {#tetris { font-size: 2.75em; width: 100%; height: 100vh;} #menu { width: 500px; height: 1000px; } #upcoming { width: 250px; height: 250px; } #canvas { width: 500px; height: 1000px; } } /* 50px chunks */
+@media screen and (min-width: 1200px) and (min-height: 1200px)  {#tetris { font-size: 3.00em; width: 100%; height: 100vh;} #menu { width: 550px; height: 1100px; } #upcoming { width: 275px; height: 275px; } #canvas { width: 550px; height: 1100px; } } /* 55px chunks */
+@media screen and (min-width: 1300px) and (min-height: 1300px)  {#tetris { font-size: 3.25em; width: 100%; height: 100vh;} #menu { width: 600px; height: 1200px; } #upcoming { width: 300px; height: 300px; } #canvas { width: 600px; height: 1200px; } } /* 60px chunks */
+@media screen and (min-width: 1400px) and (min-height: 1400px)  {#tetris { font-size: 3.50em; width: 100%; height: 100vh;} #menu { width: 650px; height: 1300px; } #upcoming { width: 325px; height: 325px; } #canvas { width: 650px; height: 1300px; } } /* 65px chunks */
+@media screen and (min-width: 1500px) and (min-height: 1500px)  {#tetris { font-size: 3.75em; width: 100%; height: 100vh;} #menu { width: 700px; height: 1400px; } #upcoming { width: 350px; height: 350px; } #canvas { width: 700px; height: 1400px; } } /* 70px chunks */
+@media screen and (min-width: 1600px) and (min-height: 1600px)  {#tetris { font-size: 4.00em; width: 100%; height: 100vh;} #menu { width: 750px; height: 1500px; } #upcoming { width: 375px; height: 375px; } #canvas { width: 750px; height: 1500px; } } /* 75px chunks */
+@media screen and (min-width: 1700px) and (min-height: 1700px)  {#tetris { font-size: 4.25em; width: 100%; height: 100vh; } #menu { width: 800px; height: 1600px; } #upcoming { width: 400px; height: 400px; } #canvas { width: 800px; height: 1600px; } } /* 80px chunks */
+@media screen and (min-width: 1800px) and (min-height: 1800px)  {#tetris { font-size: 4.50em; width: 100%; height: 100vh;} #menu { width: 850px; height: 1700px; } #upcoming { width: 425px; height: 425px; } #canvas { width: 850px; height: 1700px; } } /* 85px chunks */
+@media screen and (min-width: 1900px) and (min-height: 1900px)  {#tetris { font-size: 4.75em; width: 100%; height: 100vh;} #menu { width: 900px; height: 1800px; } #upcoming { width: 450px; height: 450px; } #canvas { width: 900px; height: 1800px; } } /* 90px chunks */
+@media screen and (min-width: 2000px) and (min-height: 2000px)  {#tetris { font-size: 5.00em; width: 100%; height: 100vh;} #menu { width: 950px; height: 1900px; } #upcoming { width: 475px; height: 475px; } #canvas { width: 950px; height: 1900px; } } /* 95px chunks */
+@media screen and (min-width: 2100px) and (min-height: 2100px)  {#tetris { font-size: 5.25em; width: 100%; height: 100vh;} #menu { width: 1000px; height: 2000px; } #upcoming { width: 500px; height: 500px; } #canvas { width: 1000px; height: 2000px; } } /* 100px chunks */
+@media screen and (min-width: 2200px) and (min-height: 2200px)  {#tetris { font-size: 5.50em; width: 100%; height: 100vh;} #menu { width: 1050px; height: 2100px; } #upcoming { width: 525px; height: 525px; } #canvas { width: 1050px; height: 2100px; } } /* 105px chunks */
+@media screen and (min-width: 2300px) and (min-height: 2300px)  {#tetris { font-size: 5.75em; width: 100%; height: 100vh;} #menu { width: 1100px; height: 2200px; } #upcoming { width: 550px; height: 550px; } #canvas { width: 1100px; height: 2200px; } } /* 110px chunks */
+@media screen and (min-width: 2400px) and (min-height: 2400px)  {#tetris { font-size: 6.00em; width: 100%; height: 100vh;} #menu { width: 1150px; height: 2300px; } #upcoming { width: 575px; height: 575px; } #canvas { width: 1150px; height: 2300px; } } /* 115px chunks */
+
+
